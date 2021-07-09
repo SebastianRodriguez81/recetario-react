@@ -3,7 +3,11 @@
 }
 
 #outlined-search {
-  color: whitesmoke;
+  color: whitesmoke;  
+}
+
+.button-search {
+  margin-top: 10px;
 }
 
 .search-form {
@@ -11,11 +15,10 @@
   margin-left: 20%;
   margin-right: 20%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;  
-  color: white;
-  margin-bottom: 20px;
+  color: white;  
 }
 
 .App-logo {

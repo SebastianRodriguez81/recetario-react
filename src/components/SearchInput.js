@@ -16,15 +16,16 @@ export default function SearchInput() {
             color="secondary"
             variant="outlined"
             fullWidth
-            label="ingresa los alimentos que tengas"
+            label="ingresá los alimentos que tengas, en inglés y separados por comas"
             type="search"
-            helperText="Qué tenés en la heladera?"
+            helperText="presioná buscar para ver tus recetas"
             onChange={(event) => {
               setBusqueda(event.target.value);
             }}
           />
           <Button
             variant="contained"
+            className="button-search"
             color="primary"           
             onClick={async () => setRecetas(await getRecetas(busqueda))}
           >
